@@ -4,14 +4,34 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="xu.qiwei.com.marketlist.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="增加一条记录"
+        android:id="@+id/addmarket_button"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showalllist_button"
+        android:layout_toRightOf="@id/addmarket_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="11dp"
+        android:text="显示所有记录"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showlist_textview"
+        android:layout_below="@id/addmarket_button"
+        android:text="123123123"
+        android:layout_marginTop="0dp"
+        />
 </RelativeLayout>
